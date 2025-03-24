@@ -1,17 +1,14 @@
-// Removing the existing <main> element with id 'main'
-const main = document.getElementById("main");
-if (main) {
-    main.remove();
-}
+// Remove the <main> element with id "main"
+document.querySelector("main#main").remove();
 
-// new <h1> element
+// Create a new <h1> element and assign it to a variable named newHeader
 const newHeader = document.createElement("h1");
 
-// id to 'victory'
+// Set the id of newHeader to "victory"
 newHeader.id = "victory";
 
-// required message
+// Set the text content of newHeader to your name followed by "is the champion"
 newHeader.textContent = "James Damien is the champion";
 
-// Appended new <h1> elementy
+// Append newHeader to the body
 document.body.appendChild(newHeader);
